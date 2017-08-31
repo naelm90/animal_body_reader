@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="BBLib">
+      <UniqueIdentifier>{38c69054-ca58-4236-8540-51c2c60224a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BBLib\BBWinUtils.cpp">
+      <Filter>BBLib</Filter>
+    </ClCompile>
+    <ClCompile Include="BBLib\BBWinXmlParser.cpp">
+      <Filter>BBLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\AnimalBodyReader.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\PostureAnalyzer.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="BBLib\BBVector2D.cpp">
+      <Filter>BBLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\AnimalTracker.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\StickerColorCalibrator.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Sources\AnimalBodyReader.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Sticker.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="BBLib\BBWinUtils.h">
+      <Filter>BBLib</Filter>
+    </ClInclude>
+    <ClInclude Include="BBLib\BBWinXmlParser.h">
+      <Filter>BBLib</Filter>
+    </ClInclude>
+    <ClInclude Include="BBLib\BBTypes.h">
+      <Filter>BBLib</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Body.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\PostureAnalyzer.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+    <ClInclude Include="BBLib\BBVector2D.h">
+      <Filter>BBLib</Filter>
+    </ClInclude>
+    <ClInclude Include="BBLib\BBUnitsConv.h">
+      <Filter>BBLib</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\StickerColorCalibrator.h">
+      <Filter>Sources</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,39 @@
+<AnimalBodyReaderConfig>
+
+	<!-- input: either "Live" or "File" -->
+	<General input="File">
+		<!-- frameWidth and frameHeight are only relevant for "Live" input type -->
+		<!-- height: above dog's average height in cm, Horizontal FOV in degrees -->
+		<Camera frameWidth="1280" frameHeight="720" height="180" HFOV="49" />
+		<File name="Videos\VID_20170318_155634.mp4" />
+		<Live deviceId="1" />
+		<Object minPixels="10" maxPixels="20000" />
+		<!-- frameInterval: interval in ms between used frames (the rest will be thrown) -->
+		<Algorithm frameInterval="10" />
+	</General>
+
+	<Stickers description="Office Depot stickers, office daylight">
+		<!-- Sticker color calibration feature, range: how wide deduced thresholds will be -->
+		<Calibration enabled="false" range="1"/>
+		<!-- HSV ranges: H in [0..179], S in [0..255], V in [0..255] -->
+		<!-- for H value min can be larger than max (for red color) -->
+		<Sticker1 name="Red"    minH="176" maxH="005" minS="150" maxS="255" minV="100" maxV="255" size="1" qty="1" />
+		<Sticker2 name="Yellow" minH="025" maxH="045" minS="060" maxS="255" minV="080" maxV="255" size="1" qty="1" />
+		<Sticker3 name="Green"  minH="49"  maxH="059" minS="100" maxS="255" minV="100" maxV="255" size="1" qty="1" />
+		<Sticker4 name="Blue"   minH="95"  maxH="105" minS="100" maxS="255" minV="100" maxV="255" size="1" qty="1" />
+		<Sticker5 name="Orange" minH="006" maxH="014" minS="150" maxS="255" minV="100" maxV="255" size="1" qty="1" />
+		<Sticker6 name="Pink"   minH="131" maxH="165" minS="030" maxS="255" minV="100" maxV="255" size="1" qty="1" />
+	</Stickers>
+
+	<BodyParts>
+		<Head  sticker="Red" />
+		<Neck  sticker="Blue" />
+		<Back  sticker="Green" />
+		<Tail  sticker="Yellow" />
+		<LegFL sticker="Pink" />
+		<LegFR sticker="Pink" />
+		<LegBL sticker="Pink" />
+		<LegBR sticker="Pink" />
+	</BodyParts>
+
+</AnimalBodyReaderConfig>
